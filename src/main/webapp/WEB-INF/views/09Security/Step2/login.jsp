@@ -48,6 +48,10 @@ $(function(){
 					<p>로그아웃 하였습니다.</p>
 				</c:if>
 				
+				<!-- 
+					security-context2.xml에서 <security:form-login/> 항목에 
+					설정한 이름을 아래 name 속성에 사용해야 한다.
+				 -->
 				<p>
 					아이디 : <input type="text" name="id" value="kosmo_" />
 				</p>

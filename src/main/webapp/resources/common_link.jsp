@@ -38,6 +38,11 @@ ul li{
 			</a>
 		</li>
 		<li>
+			<a href="${pageContext.request.contextPath }/security2/login.do">
+				로그인 페이지 바로가기
+			</a>
+		</li>
+		<li>
 			<a href="${pageContext.request.contextPath }/security2/index.do">
 				프론트 페이지 바로가기
 			</a>
