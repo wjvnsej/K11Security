@@ -93,6 +93,21 @@ Spring Security 사용절차
 			Step2 접근불가안내 페이지 바로가기
 		</a>
 	</li>
+	
+	
+	<!-- 
+	프로젝트에 스프링 시큐리티를 적용할경우 <form태그를 사용할 때는 
+	인증이 필요없는 페이지에서도 반드시 <form:form 태그 라이브러리를 사용해야 한다.
+	해당 태그를 사용하면 _csrf라는 hidden폼이 자동으로 삽입되고
+	시큐리티는 이 값을 사용하여 정상적인 폼값인지 확인한다.
+	-->
+	<h2>Spring Security 사용시 주의사항</h2>
+	<li>
+		<a href="./security3/form.do">
+			Form 페이지 바로가기
+		</a>
+	</li>
+	
 
 </body>
 </html>

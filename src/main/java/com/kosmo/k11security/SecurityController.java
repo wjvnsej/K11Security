@@ -88,5 +88,32 @@ public class SecurityController {
 		 
 		 return "09Security/Step2/accessDenied";
 	 }
+	 
+	 
+	//사용시 주의사항
+	@RequestMapping("/security3/form.do")
+	public String formPage() {
+		
+		return "09Security/Warning/postForm";
+	}
+
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
