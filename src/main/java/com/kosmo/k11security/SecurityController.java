@@ -1,6 +1,10 @@
 package com.kosmo.k11security;
 
+import java.security.Principal;
+
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -24,25 +28,28 @@ public class SecurityController {
 	/*
 	시큐리티 2단계 로그인 화면 커스텀
 	*/
-	 @RequestMapping("/security2/index.do'")
-	 public String sequrityIndex2_1() {
+	 @RequestMapping("/security2/index.do")
+	 public String sequrityIndex2_1(Principal principal, Authentication authentication, Model model) {
 		 
 		 return "09Security/Step2/index";
 	 }
-	 @RequestMapping("/security2/login.do'")
-	 public String sequrityIndex2_2() {
+	 
+	 @RequestMapping("/security2/login.do")
+	 public String sequrityIndex2_2(Model model, Principal principal) {
 		 
 		 return "09Security/Step2/login";
 	 }
-	 @RequestMapping("/security2/admin/main.do'")
+	 
+	 @RequestMapping("/security2/admin/main.do")
 	 public String sequrityIndex2_3() {
 		 
 		 return "09Security/Step2/adminMain";
 	 }
-	 @RequestMapping("/security2/accessDenined.do'")
+	 
+	 @RequestMapping("/security2/accessDenied.do")
 	 public String sequrityIndex2_4() {
 		 
-		 return "09Security/Step2/accessDenined";
+		 return "09Security/Step2/accessDenied";
 	 }
 	
 }
